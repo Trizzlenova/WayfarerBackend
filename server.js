@@ -4,7 +4,8 @@ const express = require('express'),
       bodyparser = require('body-parser'),
       cors = require('cors'),
       mongoose = require('mongoose'),
-      router = require('router');
+      router = require('router'),
+      morgan = require('morgan');
 
 const db = require(`./models`);
 const controllers = require('./controllers');

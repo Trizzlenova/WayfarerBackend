@@ -5,7 +5,7 @@ const mongoose = require('mongoose'),
 
 const userSchema = new Schema({
   email: {type: String, unique: true, lowercase: true},
-  password: String
+  password: String,
   _id: {type: Number, required: true},
   name: {type: String, required: true},
   joined: { type: 'Date', default: Date.now(), required: true },
